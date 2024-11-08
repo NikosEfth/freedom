@@ -9,7 +9,6 @@ from PIL import Image
 from torch.utils.data import DataLoader
 from utils_features import *
 from utils import *
-from pdb import set_trace as st
 
 
 def parse_args():
