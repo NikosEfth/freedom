@@ -8,7 +8,6 @@ from utils_retrieval import *
 import os
 import argparse
 import open_clip
-from pdb import set_trace as st
 
 
 def parse_args():
