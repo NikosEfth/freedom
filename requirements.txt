@@ -1,0 +1,6 @@
+numpy==1.26.4
+pandas==2.2.1
+Pillow==10.4.0
+torch==2.2.0
+open-clip-torch==2.26.1
+transformers==4.44.2
