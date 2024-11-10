@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ## Dataset
 ### Downloading the datasets
 1) Download the [**ImageNet-R**](https://people.eecs.berkeley.edu/\~hendrycks/imagenet-r.tar) dataset and the validation set of [**ILSVRC2012**](https://image-net.org/data/ILSVRC/2012/ILSVRC2012_img_val.tar) and place them in the directory `data/imagenet-r`.
-2) Download the [**LTLL**](https://users.cecs.anu.edu.au/~basura/beeldcanon/LTLL.zip) dataset and place them in the directory `data/ltll`.
+2) Download the [**LTLL**](https://users.cecs.anu.edu.au/~basura/beeldcanon/LTLL.zip) dataset and place it in the directory `data/ltll`.
 3) Download the four domains of mini-DomainNet: [**Clipart**](https://csr.bu.edu/ftp/visda/2019/multi-source/groundtruth/clipart.zip), [**painting**](https://csr.bu.edu/ftp/visda/2019/multi-source/groundtruth/painting.zip), [**real**](https://csr.bu.edu/ftp/visda/2019/multi-source/real.zip), and [**sketch**](https://csr.bu.edu/ftp/visda/2019/multi-source/sketch.zip) and place them in the directory `data/minidn`.
 4) Download the [**NICO++**](https://www.dropbox.com/scl/fo/ix8u21atdwrstmgjkz2rx/AP5fheclFPjfbBMbeHoqPow?dl=0&rlkey=kcbecly7tetqu57v4tsmo095m) dataset, specifically the `DG_Benchmark.zip` from the dropbox link and place it in the directory `data/nico`.
 The starting data directory structure should look like this:
