@@ -135,9 +135,6 @@ def calculate_rankings(
                 image_and_neighbor_features, text_corpus_features, 1000, args.ni
             )
 
-            class_vectors_list = text_corpus_features[top_indices]
-            class_vectors_list = list(torch.unbind(class_vectors_list, dim=1))
-
             top_indices = top_indices.detach().cpu().numpy()
             indexes_np = np.transpose(top_indices, (1, 0, 2))
             text_list_from_img = real_corpus_text[indexes_np]
@@ -146,10 +143,6 @@ def calculate_rankings(
             text_list_from_img = [
                 [text_list_from_img[j][i] for j in range(len(text_list_from_img))]
                 for i in range(len(text_list_from_img[0]))
-            ]
-            class_vectors_list = [
-                [class_vectors_list[j][i] for j in range(len(class_vectors_list))]
-                for i in range(len(class_vectors_list[0]))
             ]
             text_list_from_img, weights = keep_k_most_frequent(
                 text_list_from_img, args.miu
