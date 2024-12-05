@@ -148,7 +148,7 @@ python run_retrieval.py --dataset imagenet_r --backbone clip --method freedom --
 Specifically for `freedom` experiments, you can change the hyperparameters described in the paper by specifying `--kappa`, `--miu`, and `--ni`.
 
 ### Expected results
-The experiments conducted with the `run_retrieval.py` script produce the following Domain Conversion mAP (%) results for the `datasets` and `methods` outlined above. By running the experiments as described, you should expect the following numbers:
+The experiments conducted with the `run_retrieval.py` script produce the following Domain Conversion mAP (%) results for the `datasets` and `methods` outlined above. By running the experiments as described, you should expect the following numbers for the CLIP backbone:
 
 #### ImageNet-R
 
