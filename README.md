@@ -1,6 +1,6 @@
 # Composed Image Retrieval for Training-FREE DOMain Conversion (WACV 2025)
 
-This repository contains the PyTorch implementation of our WACV 2025 paper: **"Composed Image Retrieval for Training-FREE DOMain Conversion".** [ArXiv]
+This repository contains the PyTorch implementation of our WACV 2025 paper: **"Composed Image Retrieval for Training-FREE DOMain Conversion".** [[ArXiv](https://arxiv.org/abs/2412.03297)]
 
 ## Environment
 Our experiments were conducted using **python 3.10**. To set up the environment, run:
