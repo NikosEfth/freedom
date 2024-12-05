@@ -2,6 +2,25 @@
 
 This repository contains the PyTorch implementation of our WACV 2025 paper: **"Composed Image Retrieval for Training-FREE DOMain Conversion".** [[ArXiv](https://arxiv.org/abs/2412.03297)]
 
+<div align="center">
+  <img width="80%" alt="Domains" src="images/teaser.png">
+</div>
+
+## Overview
+We introduce FREEDOM, a training-free, composed image retrieval method for domain conversion based on CLIP. Given an image query and a text query that names a domain, images are retrieved having the class of the image query and the domain of the text query. A range of applications is targeted, where classes can be defined at the category or instance level, and domains can be defined as styles or contexts.
+
+### Motivation
+In this paper, we focus on a specific variant of composed image retrieval, namely domain conversion, where the text query defines the target domain. Unlike conventional
+cross-domain retrieval, where models are trained to use queries of a source domain and retrieve items from another target domain, we address a more practical, open-domain setting, where the query and database may be from any unseen domain. We target different variants of this task, where the class of the query object is defined at category-level or instance-level. At the same time, the domain corresponds to descriptions of style or context. Even though domain conversion is a subset of the tasks handled by existing CIR methods, the variants considered in our work reflect a more comprehensive set of applications than what was encountered in prior art.
+
+### Approach
+
+Given a query image and a query text indicating the target domain, proxy images are first retrieved from the query through an image-to-image search over a visual memory. Then, a set of text labels is associated with each proxy image through an image-to-text search over a textual memory. Each of the most frequent text labels is combined with the query text in the text space, and images are retrieved from the database by text-to-image search. The resulting sets of similarities are linearly combined with the frequencies of occurrence as weights.
+
+<div align="center">
+  <img width="80%" alt="Domains" src="images/method.png">
+</div>
+
 ## Environment
 Our experiments were conducted using **python 3.10**. To set up the environment, run:
 ```
