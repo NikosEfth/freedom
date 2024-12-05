@@ -106,7 +106,7 @@ freedom/
 
 ## Experiments
 ### Extract features
-To run any experiment you first need to extract features with the script `create_features.py`. Both the features of the corpus and the features of the wanted dataset are needed, but for a given backbone they need to be extracted only once. You can specify what features to produce with `--dataset` that can take the inputs `corpus`, `imagenet_r`, `nico`, `minidn`, and `ltll` . Also you will need to specify the `--backbone` that can either be `clip` or `siglip`. You can specify the GPU ID with `--gpu`. For exapmle, to run experiments on **ImageNet-R** with **CLIP** on the GPU 0 you should run:
+To run any experiment you first need to extract features with the script `create_features.py`. Both the features of the corpus and the features of the wanted dataset are needed, but for a given backbone, they need to be extracted only once. You can specify what features to produce with `--dataset` that can take the inputs `corpus`, `imagenet_r`, `nico`, `minidn`, and `ltll`. Also, you will need to specify the `--backbone`, which can either be `clip` or `siglip`. You can specify the GPU ID with `--gpu`. For example, to run experiments on **ImageNet-R** with **CLIP** on the **GPU 0** you should extract the following features:
 ```
 python create_features.py --dataset corpus --backbone clip --gpu 0
 python create_features.py --dataset imagenet_r --backbone clip --gpu 0
@@ -116,8 +116,8 @@ The experiments can run through the `run_retrieval.py` script. You should specif
 1) `--dataset` from `imagenet_r`, `nico`, `minidn`, and `ltll`.
 2) `--backbone` from `clip`, and `siglip`.
 3) `--method` from `freedom`, `image`, `text`, `sum`, and `product`.
-For example you can run:
+For example, you can run:
 ```
 python run_retrieval.py --dataset imagenet_r --backbone clip --method freedom --gpu 0
 ```
-Specifically for `freedom` experiments you can change the hyperparameters that are described in the paper by specifying `--kappa`, `--miu`, and `--ni`.
+Specifically for `freedom` experiments, you can change the hyperparameters described in the paper by specifying `--kappa`, `--miu`, and `--ni`.
