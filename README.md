@@ -2,18 +2,18 @@
 
 This repository contains the official PyTorch implementation of our WACV 2025 paper: **"Composed Image Retrieval for Training-FREE DOMain Conversion".** [[arXiv](https://arxiv.org/abs/2412.03297)]
 
+## Overview
+We introduce FREEDOM, a **training-free**, composed image retrieval (CIR) method for domain conversion based on vision-language models (VLMs). Given an $\textcolor{orange}{image\ query}$ and a $\it{text\ query}$ that names a domain, images are retrieved having the class of the $\textcolor{orange}{image\ query}$ and the domain of the $\it{text\ query}$. A range of applications is targeted, where classes can be defined at category level (a,b) or instance level (c), and domains can be defined as styles (a, c), or context (b). In the above visualization, for each image query, retrieved images are shown for different text queries.
+
 <div align="center">
   <img width="80%" alt="Domains" src="images/teaser.png">
 </div>
 
-## Overview
-We introduce FREEDOM, a **training-free**, composed image retrieval method for domain conversion based on vision-language models (VLMs). Given an $\textcolor{orange}{image\ query}$ and a $\it{text\ query}$ that names a domain, images are retrieved having the class of the $\textcolor{orange}{image\ query}$ and the domain of the $\it{text\ query}$. A range of applications is targeted, where classes can be defined at category level (a,b) or instance level (c), and domains can be defined as styles (a, c), or context (b). In the above visualization, for each image query, retrieved images are shown for different text queries.
-
 ### Motivation
-In this paper, we focus on a specific variant of composed image retrieval, namely domain conversion, where the text query defines the target domain. Unlike conventional cross-domain retrieval, where models are trained to use queries of a source domain and retrieve items from another target domain, we address a more practical, open-domain setting, where the query and database may be from any unseen domain. We target different variants of this task, where the class of the query object is defined at category-level or instance-level. At the same time, the domain corresponds to descriptions of style or context. Even though domain conversion is a subset of the tasks handled by existing CIR methods, the variants considered in our work reflect a more comprehensive set of applications than what was encountered in prior art.
+In this paper, we focus on a specific variant of composed image retrieval, namely **domain conversion**, where the text query defines the target domain. Unlike conventional cross-domain retrieval, where models are trained to use queries of a source domain and retrieve items from another target domain, we address a more practical, open-domain setting, where the query and database may be from any unseen domain. We target different variants of this task, where the class of the query object is defined at category-level (a, b) or instance-level (c). At the same time, the domain corresponds to descriptions of style (a, c) or context (b). Even though domain conversion is a subset of the tasks handled by existing CIR methods, the variants considered in our work reflect a more comprehensive set of applications than what was encountered in prior art.
 
 ### Approach
-Given a query image and a query text indicating the target domain, proxy images are first retrieved from the query through an image-to-image search over a visual memory. Then, a set of text labels is associated with each proxy image through an image-to-text search over a textual memory. Each of the most frequent text labels is combined with the query text in the text space, and images are retrieved from the database by text-to-image search. The resulting sets of similarities are linearly combined with the frequencies of occurrence as weights. Below: $k=4$ proxy images, $n=3$ text labels per proxy image, $m=2$ most frequent text labels.
+Given a $\textcolor{orange}{query\ image}$ and a $\it{query\ text}$ indicating the target domain, proxy images are first retrieved from the query through an image-to-image search over a visual memory. Then, a set of text labels is associated with each proxy image through an image-to-text search over a textual memory. Each of the most frequent text labels is combined with the $\it{query\ text}$ in the text space, and images are retrieved from the database by text-to-image search. The resulting sets of similarities are linearly combined with the frequencies of occurrence as weights. Below: $k=4$ proxy images, $n=3$ text labels per proxy image, $m=2$ most frequent text labels.
 
 <div align="center">
   <img width="80%" alt="Domains" src="images/method.png">
