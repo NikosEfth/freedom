@@ -1,4 +1,8 @@
 # Composed Image Retrieval for Training-FREE DOMain Conversion (WACV 2025) 🎨
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/composed-image-retrieval-for-training-free/zero-shot-composed-image-retrieval-zs-cir-on-6)](https://paperswithcode.com/sota/zero-shot-composed-image-retrieval-zs-cir-on-6?p=composed-image-retrieval-for-training-free)<br>
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/composed-image-retrieval-for-training-free/zero-shot-composed-image-retrieval-zs-cir-on-7)](https://paperswithcode.com/sota/zero-shot-composed-image-retrieval-zs-cir-on-7?p=composed-image-retrieval-for-training-free)<br>
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/composed-image-retrieval-for-training-free/zero-shot-composed-image-retrieval-zs-cir-on-8)](https://paperswithcode.com/sota/zero-shot-composed-image-retrieval-zs-cir-on-8?p=composed-image-retrieval-for-training-free)<br>
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/composed-image-retrieval-for-training-free/zero-shot-composed-image-retrieval-zs-cir-on-9)](https://paperswithcode.com/sota/zero-shot-composed-image-retrieval-zs-cir-on-9?p=composed-image-retrieval-for-training-free)
 
 This repository contains the official PyTorch implementation of our WACV 2025 paper: **"Composed Image Retrieval for Training-FREE DOMain Conversion".** [[arXiv](https://arxiv.org/abs/2412.03297)]
 
