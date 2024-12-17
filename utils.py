@@ -130,7 +130,7 @@ def invert_levels(input_list):
 
     return transposed
 
-
+# From https://github.com/filipradenovic/cnnimageretrieval-pytorch/blob/1e66a417afa2247edde6d35f3a9a2a465778a3a8/cirtorch/utils/evaluate.py#L3
 def compute_ap(ranks, nres):
     nimgranks = len(ranks)
     ap = 0
