@@ -4,7 +4,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/composed-image-retrieval-for-training-free/zero-shot-composed-image-retrieval-zs-cir-on-8)](https://paperswithcode.com/sota/zero-shot-composed-image-retrieval-zs-cir-on-8?p=composed-image-retrieval-for-training-free)<br>
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/composed-image-retrieval-for-training-free/zero-shot-composed-image-retrieval-zs-cir-on-9)](https://paperswithcode.com/sota/zero-shot-composed-image-retrieval-zs-cir-on-9?p=composed-image-retrieval-for-training-free)
 
-This repository contains the official PyTorch implementation of our WACV 2025 paper: **"Composed Image Retrieval for Training-FREE DOMain Conversion".** [[arXiv](https://arxiv.org/abs/2412.03297)]
+This repository contains the official PyTorch implementation of our WACV 2025 Oral paper: **"Composed Image Retrieval for Training-FREE DOMain Conversion".** [[arXiv](https://arxiv.org/abs/2412.03297)]
 
 ## Overview
 We introduce FREEDOM, a **training-free**, composed image retrieval (CIR) method for domain conversion based on vision-language models (VLMs). Given an $\textcolor{orange}{image\ query}$ and a $\it{text\ query}$ that names a domain, images are retrieved having the class of the $\textcolor{orange}{image\ query}$ and the domain of the $\it{text\ query}$. A range of applications is targeted, where classes can be defined at category level (a,b) or instance level (c), and domains can be defined as styles (a, c), or context (b). In the above visualization, for each image query, retrieved images are shown for different text queries.
