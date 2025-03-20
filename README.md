@@ -206,11 +206,10 @@ This repository is released under the MIT license as found in the [LICENSE](LICE
 If you find this repository useful, please consider giving a star 🌟 and citation:
 
 ```latex
-@inproceedings{efth2025composed,
+@inproceedings{composed2025,
   title={Composed Image Retrieval for Training-Free Domain Conversion},
   author={Efthymiadis, Nikos and Psomas, Bill and Laskar, Zakaria and Karantzalos, Konstantinos and Avrithis, Yannis and Chum, Ondřej and Tolias, Giorgos},
   booktitle={IEEE Winter Conference on Applications of Computer Vision},
-  year={2025},
-  organization={IEEE}
+  year={2025}
 }
 ```
